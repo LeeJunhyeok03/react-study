@@ -4,9 +4,14 @@ import Avatar from './components/Avatar'
 
 function AppProfile() {
 
+  const handleClick = (event) => {
+    console.log(event);
+    alert("버튼이 클릭됨");
+  };
+
   return (
     <>
-        
+    <button onClick={handleClick}>버튼</button>  
     <Avatar image="https://images.unsplash.com/photo-1674925271211-cef66b0db2f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60" type="new" />
     <Profile 
         image="https://images.unsplash.com/photo-1674925271211-cef66b0db2f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
